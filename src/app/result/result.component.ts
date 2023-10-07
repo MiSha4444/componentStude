@@ -7,12 +7,13 @@ import {Component, Input, Output} from '@angular/core';
 })
 export class ResultComponent {
   @Input() summa: number;
-  public hide: boolean = true
+  @Input() symbol: string;
+  public hide: boolean = true;
 
   result() {
     if (this.summa != 0) {
-      console.log(this.summa)
-      this.hide = !this.hide
+      console.log(this.summa);
+      this.hide = !this.hide;
     }
   }
 }

@@ -1,2 +1,8 @@
 <button class="button" (click)="result()">Результат</button>
 <div class="" [hidden]="hide">{{summa}}</div>
+<div [ngSwitch]="symbol">
+  <ng-template ngSwitchCase="вычитания">результат вычитания:{{summa}}</ng-template>
+  <ng-template ngSwitchCase="умножения">результат умножения:{{summa}}</ng-template>
+  <ng-template ngSwitchCase="деления">результат деления:{{summa}}</ng-template>
+  <ng-template ngSwitchCase="Сложение">результат Сложение:{{summa}}</ng-template>
+</div>
