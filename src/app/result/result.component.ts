@@ -9,7 +9,7 @@ export class ResultComponent {
   @Input() summa: number;
   @Input() symbol: string;
   @Input() res: string;
-  public results = []
+  public results = [];
 
   public hide: boolean = true;
   public date: Date = new Date();

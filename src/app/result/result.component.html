@@ -10,4 +10,6 @@
   {{date | date}}
 </p>
 <p>{{res}}</p>
-<br> результаты: {{results | json}}
+<div *ngFor=" let r of results">
+  Результат: {{r}}
+</div>
