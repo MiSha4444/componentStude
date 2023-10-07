@@ -1,9 +1,9 @@
 <input type="number" [(ngModel)]="numberOne">
 <input type="number" [(ngModel)]="numberTwo">
-
-<app-result [summa]="summa" [symbol]="symbol"></app-result>
 <app-divide (click)="divideRes()"></app-divide>
 <app-minus (click)="minusRes()"></app-minus>
 <app-multiply (click)="multiplyRes()"></app-multiply>
 <app-plus (click)="PlusRes()"></app-plus>
 
+<app-result [summa]="summa" [symbol]="symbol" [res]='res'></app-result>
+<app-post  ></app-post>

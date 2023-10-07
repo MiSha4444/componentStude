@@ -9,6 +9,7 @@ import { DivideComponent } from './divide/divide.component';
 import { ResultComponent } from './result/result.component';
 import {FormsModule} from "@angular/forms";
 import { CalculationComponent } from './calculation/calculation.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CalculationComponent } from './calculation/calculation.component';
     MultiplyComponent,
     DivideComponent,
     ResultComponent,
-    CalculationComponent
+    CalculationComponent,
+    PostComponent,
   ],
     imports: [
         BrowserModule,
